@@ -1,0 +1,115 @@
+*
+{			
+	margin: 0px;
+}
+.body_background
+{
+	background-color: white;
+}
+
+.foot
+{
+	font-size: 30px; 
+	background-color: #000000;
+	width: 100%;
+	height: 100px;
+	padding-top: 10px;
+}
+.nav
+{
+	width: 100%
+}
+ul
+{
+	list-style-type: none;
+	font-size: 20px;
+	margin-right: 10%
+}
+li
+{
+	display: inline;
+	font-size: 20px;
+	margin-right: 3%;
+}
+.home
+{
+	color: white; 
+	text-decoration:none;
+	font-size: 20px;
+	margin-left: 400px;
+	margin-top: 5px;
+}
+.navtxt
+{	color: white; 
+	text-decoration:none;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+.button
+{
+	background-color: white;
+	 
+	padding: 15px 32px;
+	text-decoration: none;
+}
+.flex
+{
+	background-color: #f2f2f2; 
+	flex: 30%; 
+	font-family: Arial;
+	font-size: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: solid #e1e1e1;
+}
+.flex:hover
+{
+	border: none;
+	background-color: white;
+	box-shadow: 2px 2px 5px 5px #505050; 
+}
+nav div a:hover
+{
+	background-color: #000000; 
+	border: #000000;
+	border-bottom: solid #8cfffb;
+	border-style: inset;	
+
+}
+
+
+
+
+.ContactUs
+{
+	display: flex;
+	background-color: #f2f2f2;
+	border: solid #e1e1e1;
+}
+.form
+{
+	 
+	flex: 50%; 
+	font-family: Arial;
+	font-size: 20px;
+	margin: 50px 150px;
+		
+}
+.map:hover
+{
+	box-shadow: 2px 2px 5px 5px #505050;
+}
+p
+{
+	font-size: 15px;
+	font-family: Arial; 
+}
+.hide
+{
+	display:none;
+}
+.Nhide
+{
+	display: block;
+}

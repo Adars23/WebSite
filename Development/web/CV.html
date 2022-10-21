@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV</title>
+	<meta name="discription" content="Just Basic HTML"/>
+	<meta name="keywords" content="HTML"/>
+	<meta name="author" content="Islington">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- internal css -->
+	<style type="text/css">
+		*
+		{
+			margin: 0px auto;
+		}
+		.text
+		{
+			color: white;
+			font-size: 15px;
+			font-family: Arial;
+		}
+		.table
+		{
+			width: 70%;
+			font-size: 15px;
+			font-family: Arial;
+			text-align: left;
+			padding-left: 200px;
+			
+		}	
+	</style>
+</head>
+<body style="width: 100% height: 999px;">
+	<!-- Coding of navigation bar starts here -->
+	<div style="position: fixed;background-color: #000000;width: 100%;height: 35px; overflow: hidden;" id="change">
+		<nav class="nav">
+			<div style="position: fixed; margin-left: 10px; ">
+				<img src="../img/logo.png" height="35px">
+			</div>
+			<ul>
+				<div align="right">
+					<li><a href="../Home.html" class="home">Home</a></li>
+					<li><a href="CV.html" class="navtxt">CV</a> </li>
+					<li><a href="Blog.html" class="navtxt">Blog</a></li>
+					<li><a href="Research.html" class="navtxt">Research</a></li>
+					<li><a href="ContactUs.html" class="navtxt">Contact Us</a></li>
+				</div>	
+			</ul>
+		</nav>
+	</div>
+	<!-- Javascript for changing background colour og nav bar starts here -->
+	<script type="text/javascript">
+		var color = ["#2B2D2F", "#000000"];
+		var x = 0;
+		var bgcolor = document.getElementById('change');
+		setInterval(slider, 30000);
+
+		function slider()
+		{
+			if (x < 2)
+			{
+				x = x + 1;	
+			}
+			else
+			{
+				x = 1;
+			}
+			bgcolor.style = "background-color:"+color[x-1]+"; width: 100%; height: 35px; overflow: hidden; position:fixed;";
+		}
+	</script>
+	<br>
+	<!-- body starts here -->
+	<div style="width: 100%; height: 1950px; padding-top: 30px; background-color: white; ">
+		<!-- For heading of the page -->
+		<div style="font-family: Arial;font-size: 20px;" align="center">
+			<h1>Curriculum Vitae (CV)</h1>
+		</div>
+			<br>
+			<br>
+			<!-- body content starts here -->
+			<div style="width: 80%; text-align: center; background-color: #f2f2f2; border:solid #e1e1e1;">
+				<!-- Personal Information starts here -->
+				<div style="width: 100%;">
+						<h2>Personal Information</h2>
+				</div>
+				<div class="table" >
+				<table  border="0" width="600PX" height="500PX">
+					<tr>
+						<td>Full Name</td>
+						<td>Aadarsha Muni Shakya</td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td>Chhetrapati, Kathmandu, Nepal</td>
+					</tr>
+					<tr>
+						<td>Mobile Number</td>
+						<td>+977-9840209272</td>
+					</tr>
+					<tr>
+						<td>E-mail</td>
+						<td>aadarshakya23@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Nationality</td>
+						<td>Nepalese</td>
+					</tr>
+					<tr>
+						<td>Citizenship Number</td>
+						<td>28374127623857</td>
+					</tr>
+					<tr>
+						<td>Date of Birth</td>
+						<td>April 23 2002</td>
+					</tr>
+					<tr>
+						<td>Marital Status</td>
+						<td>Single</td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td>Male</td>
+					</tr>
+				</table>
+			</div>
+			</div>
+			<br>
+			<br>
+			<!-- about-me starts here -->
+			<div style="width: 80%; background-color: #f2f2f2; border:solid #e1e1e1;">
+				<div style="width: 30%; text-align: center">
+					<h2>About Myself</h1>
+				</div>
+				<br>
+				<div style="width: 100%; padding-left: 7px;">
+					<p>I am Aadarsha Muni Shakya currently pursuing BSc (Hons) in Islington College. And the Urge of learning new things has increased my skill level; The skills I have is not yet enough. So, I am learning new things every-day from my teachers, family members, friends and most importantly from my-self. I belief that learning new things is a never-ending process and as i learn new things the skills will incerse automatically.<p>
+				</div>
+			</div>
+			<br>
+			<br>
+			<!-- Education Qulification -->
+			<div style="width: 80%; text-align: center; background-color: #f2f2f2; border:solid #e1e1e1;">
+				<div>
+					<h2>Education Background</h2>
+				</div>
+				<div class="table"><!-- for ACE -->
+					<table border="0" width="600PX"  height="350PX" >
+						<tr>
+							<td><b>Title of qualification award</b></td>
+							<td><b>SEE(Secondary Education Examation)</b></td>
+						</tr>
+						<tr>
+							<td>Passed Year</td>
+							<td>2018</td>
+						</tr>
+						<tr>
+							<td>Devision/Percentage</td>
+							<td>3.10</td>
+						</tr>
+						<tr>
+							<td>Name of Instuation</td>
+							<td>New Mellinnium School        </td>
+						</tr>
+						<tr>
+						<td><b>Title of qualification award</b></td>
+						<td><b>A-Level (Advanced Level)              </b></td>
+					</tr>
+					<tr>
+						<td>Passed Year</td>
+						<td>2020</td>
+					</tr>
+					<tr>
+						<td>Devision/Percentage</td>
+						<td>2.0</td>
+					</tr>
+					<tr>
+						<td>Name of Instuation</td>
+						<td>Ace International Business School</td>
+					</tr>
+					</table>
+				</div>
+			</div>
+			<br>
+			<br>
+			<!-- skills begin here -->
+			<div style="width: 80%;font-size: 15px; font-family: Arial; background-color: #f2f2f2; border:solid #e1e1e1;">
+				<div style="text-align: center;">
+					<h2>Skills</h2>
+				</div>
+				<br>
+				<div style="padding-left: 43%">
+					<ul>
+						<li>Art & Crafts</li><br>
+						<li>Theater</li><br>
+						<li>Basketball</li><br>
+						<li>Cllligraphy</li><br>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<br>
+			<!-- Cretificates start here -->
+			<div style="width: 80%; font-size: 15px; font-family: Arial; background-color: #f2f2f2; border:solid #e1e1e1;">
+				<div style="text-align: center;">
+					<h2>Certification</h2>
+				</div>
+				<br>
+				<div style="padding-left: 30%;">
+					<ul>
+						<li>Abacus Master Mind - Level 1 (September 2014)</li><br>
+						<li>NeBA Talent Hunt - partecipante (June 2018)</li><br>
+						<li>Dharmakriti Buddhist Study Circle - Art Competition (July 2018)</li><br>
+						<li>Secondary Education Examination - Completion (July 2018)</li><br>
+						<li>APTECH Computer Education - Webdesigning & Hosting (July 2018)</li><br>
+						<li>8th ACE Inter A Level Basketball Tournment 2019- Runnre up (November 2019) </li><br>
+						<li>Advanced Subsidiary Level Eximination - Completion (November 2019)</li><br>
+						<li>Advanced Level Eximination - Completion (June 2020)</li><br>
+						<li>Skill Hackathone - partecipante (January 2021)</li><br>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<br>
+			<!-- Awards start here -->
+			<div style="width: 80%; font-size: 15px; font-family: Arial; background-color: #f2f2f2; border:solid #e1e1e1;">
+				<div style="text-align: center;">
+					<h2>Award and Achivement</h2>
+				</div>
+				<br>	
+				<div style="padding-left:25%; ">
+					<ul>
+						<li>8th ACE Inter A Level Basketball Tournment 2019- Runnre up (November 2019) </li>
+					</ul>
+				</div>
+				<br>		
+			</div>
+	</div>
+	<!-- Footer starts here -->
+	<div class="foot">
+		<footer align="center">
+			<!-- footer content starts here -->
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>
+					This website is designed to show
+				</p>
+			</div>
+			<div style="color: white; font-family: Arial;font-size: 30px;">
+				<p>
+					My Portfolio Website
+				</p>
+			</div>
+			<!-- cyan underline -->
+			<div style="background-color:#8cfffb; width: 10%;  height: 2px">
+
+			</div>
+			<br>
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>Chhetrapati,Kathmandu,Nepal</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

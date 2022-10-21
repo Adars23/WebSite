@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta name="discription" content="Just Basic HTML"/>
+	<meta name="keywords" content="HTML"/>
+	<meta name="author" content="Islington"/>
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- internal css -->
+	<style type="text/css">
+		*
+		{
+			margin: 0px auto;
+		}
+		input
+		{
+			padding: 10px 10px 10px 10px;
+			margin-right:10px;
+		}	
+	</style>
+</head>
+<body style="width: 100% height: 999px;">
+	<!-- Coding of navigation bar starts here -->
+	<div style="position: fixed;background-color: #000000;width: 100%;height: 35px; overflow: hidden;" id="change">
+		<nav class="nav">
+			<div style="position: fixed; margin-left: 10px; ">
+				<img src="../img/logo.png" height="35px">
+			</div>
+			<ul>
+				<div align="right">
+					<li><a href="../Home.html" class="home">Home</a></li>
+					<li><a href="CV.html" class="navtxt">CV</a> </li>
+					<li><a href="Blog.html" class="navtxt">Blog</a></li>
+					<li><a href="Research.html" class="navtxt">Research</a></li>
+					<li><a href="ContactUs.html" class="navtxt">Contact Us</a></li>
+				</div>	
+			</ul>
+		</nav>
+	</div>
+	<!-- Javascript for changing background colour og nav bar starts here -->
+	<script type="text/javascript">
+		var color = ["#2B2D2F", "#000000"];
+		var x = 0;
+		var bgcolor = document.getElementById('change');
+		setInterval(slider, 30000);
+
+		function slider()
+		{
+			if (x < 2)
+			{
+				x = x + 1;	
+			}
+			else
+			{
+				x = 1;
+			}
+			bgcolor.style = "background-color:"+color[x-1]+"; width: 100%; height: 35px; overflow: hidden; position:fixed;";
+		}
+	</script>
+	<br>
+	<!-- body starts here -->
+	<div style="width: 95%; height: 600px; padding-top: 25px;">
+		<div style="font-family: Arial;font-size: 20px;" align="center">
+			<h1>Contact Us</h1>
+		</div>
+		<!-- body content starts here -->
+		<div class="ContactUs" >
+			<!-- form starts here -->
+			<div class="form">
+				<form name="myform" onsubmit="validateForm()"><!-- when submitted internal javasecipt will be activated -->
+					<input type="text" name="firstname" placeholder="First Name">
+					<input type="text" name="lastname" placeholder="Last Name">
+					<br/>
+					<br/>
+					<input type="text" name="mobile" placeholder="Mobile Number">
+					<br/>
+					<br/>
+					<input type="number" name="age" placeholder="Age">
+					<br/>
+					<br/>
+					<label>Gender:</label> 
+					<input type="radio" name="gender" value="m" checked="">Male
+					<input type="radio" name="gender" value="f">Female
+					<br/>
+					<br/>
+					<input type="text" name="email" placeholder="Email">
+					<br/>
+					<br/>
+					<input type="submit" name="submit">
+				</form>
+			</div>
+			<!-- contact betails and location starts here -->
+			<div style="margin-right: 200px; ">
+				<div style="">
+					<div style="font-size: 15px; font-family: Arial; text-align: center; margin-top:40px ; ">
+						<p>aadarshakya23@gmail.com</p>
+						<p>Kathmandu, Nepal</p>
+					</div>
+					<br>	
+					<div class="map">
+						<a href="https://www.google.com/maps/place/27%C2%B042'40.3%22N+85%C2%B018'23.5%22E/@27.7111977,85.3043313,17z/" target="_blank"><img src="../img/map.png" width="300px" height="300px"></a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- internal Javascript for for validation -->
+		<script type="text/javascript">
+			function validateForm()
+			{
+				var fName = document.forms["myform"]["firstname"].value;
+				var lName = document.forms["myform"]["lastname"].value; 	
+				var Age = document.forms["myform"]["age"].value;
+				var Gender = document.forms["myform"]["gender"].value;
+				var Email = document.forms["myform"]["email"].value;
+
+				if (fName == "" || lName == "" || Age == "" || Email == "")
+				{
+					alert("First name, Last name, Age, Gender or Email is empty... please Retry by clicking OK down below... Thankyou")
+				}
+				else
+				{
+					alert("Thankyou for signing in")
+				}	
+			}
+		</script>	
+	</div>
+	<!-- Footer starts here -->
+	<div class="foot">
+		<footer align="center">
+			<!-- footer content starts here -->
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>
+					This website is designed to show
+				</p>
+			</div>
+			<div style="color: white; font-family: Arial;font-size: 30px;">
+				<p>
+					My Portfolio Website
+				</p>
+			</div>
+			<!-- cyan underline -->
+			<div style="background-color:#8cfffb; width: 10%;  height: 2px">
+
+			</div>
+			<br>
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>Chhetrapati,Kathmandu,Nepal</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

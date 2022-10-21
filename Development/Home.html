@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="discription" content="Just Basic HTML"/>
+	<meta name="keywords" content="HTML"/>
+	<meta name="author" content="Islington">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- internal css -->
+	<style type="text/css">
+		*
+		{
+			margin: 0px auto;
+		}	
+	</style>
+</head>
+
+<body style="width: 100% height: 999px;">
+	<!-- Coding of navigation bar starts here -->
+	<div style="position: fixed;background-color: #000000;width: 100%;height: 35px; overflow: hidden;" id="change">
+		<nav class="nav">
+			<div style="position: fixed; margin-left: 10px; ">
+				<img src="img/logo.png" height="35px">
+			</div>
+			<ul>
+				<div align="right">
+					<li><a href="Home.html" class="home">Home</a></li>
+					<li><a href="web/CV.html" class="navtxt">CV</a> </li>
+					<li><a href="web/Blog.html" class="navtxt">Blog</a></li>
+					<li><a href="web/Research.html" class="navtxt">Research</a></li>
+					<li><a href="web/ContactUs.html" class="navtxt">Contact Us</a></li>
+				</div>	
+			</ul>
+		</nav>
+	</div>
+	<!-- Javascript for changing background colour og nav bar starts here -->
+	<script type="text/javascript">
+		var color = ["#2B2D2F", "#000000"];
+		var x = 0;
+		var bgcolor = document.getElementById('change');
+		setInterval(slider, 30000);
+
+		function slider()
+		{
+			if (x < 2)
+			{
+				x = x + 1;	
+			}
+			else
+			{
+				x = 1;
+			}
+			bgcolor.style = "background-color:"+color[x-1]+"; width: 100%; height: 35px; overflow: hidden; position:fixed;";
+		}
+	</script>
+	<br>
+	<!-- body starts here -->
+	<div style="width: 100%; height: 1000px; padding-top: 25px;background-color: white;" >
+		<!-- For heading of the page -->
+		<div style="font-family: Arial;font-size: 20px;" align="center">
+			<h1>Home</h1>
+		</div>
+		<br>
+		<br>
+		<!-- body content starts here -->
+		<div style="width: 70%;">
+			<!-- Short discription of CV page starts here -->
+			<div style="display: flex;">
+				<div style="flex: 70%; ">
+				</div>
+				<div class="flex">
+					<h1>CV</h1><br>
+					<p>
+						CV which stands for Curriculum Vitae is a short summary of my qualification and education. To know about my CV click the button down below.
+					</p><br>
+					<button type="button" class="button"><a href="web/CV.html" style="color: black;  text-decoration: none;">Click Here</a></button>
+				</div>
+			</div>
+			<br>
+			<br>
+			<!-- Short discription of Blog page starts here -->
+			<div style="display: flex;">
+				<div class="flex">
+					<h1>Blog</h1><br>
+					<p>
+						The blog is about Vareious technologies of  , and its posisitive and negetive impacts are also discussed. To read the whole blog click the button down below.
+					</p><br>
+					<button type="button" class="button"><a href="web/Blog.html" style="color: black; text-decoration: none;">Click Here</a></button>
+				</div>
+				<div style="flex: 70%; ">
+				</div>
+			</div>
+			<br>
+			<br>
+			<!-- Short discribtion of Research page starts here -->
+			<div style="display: flex;">
+				<div style="flex: 70%; ">
+				</div>
+				<div class="flex">
+					<h1>Research</h1><br>
+					<p>
+						Inside Research the reference of different websites are given with side-by-side comparisions. To read the whole blog click the button down below.
+					</p><br>
+					<button type="button" class="button"><a href="web/Research.html" style="color: black; text-decoration: none;">Click Here</a></button>
+				</div>
+			</div>
+			<br>
+			<br>
+			<!-- Short discribtion of Contact Us page starts here -->
+			<div style="display: flex;">
+				<div class="flex">
+					<h1>Contact Us</h1><br>
+					<p>
+						Inside Contact Us you can fill up a form to contact me. To read the whole blog click the button down below.
+					</p><br>
+					<button type="button" class="button"><a href="web/ContactUs.html" style="color: black; text-decoration: none;">Click Here</a></button>
+				</div>
+				<div style="flex: 70%;">
+				</div>
+			</div>		
+		</div>
+	</div>
+	<!-- Footer starts here -->
+	<div class="foot">
+		<footer align="center">
+			<!-- footer content starts here -->
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>
+					This website is designed to show
+				</p>
+			</div>
+			<div style="color: white; font-family: Arial;font-size: 30px;">
+				<p>
+					My Portfolio Website
+				</p>
+			</div>
+			<!-- cyan underline -->
+			<div style="background-color:#8cfffb; width: 10%;  height: 2px">
+
+			</div>
+			<br>
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>Chhetrapati,Kathmandu,Nepal</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

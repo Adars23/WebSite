@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Research</title>
+	<meta name="discription" content="Just Basic HTML"/>
+	<meta name="keywords" content="HTML"/>
+	<meta name="author" content="Islington">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- internal css -->
+	<style type="text/css">
+		*
+		{
+			margin: 0px auto;
+		}
+		.text
+		{
+			color: white;
+			font-size: 15px;
+			font-family: Arial;
+		}	
+	</style>
+	<!-- external javascript for image toddler -->
+	<script type="text/javascript" src="../java/js.java">
+		
+	</script>
+</head>
+<body style="width: 100% height: 999px;">
+	<!-- Coding of navigation bar starts here -->
+	<div style="position: fixed;background-color: #000000;width: 100%;height: 35px; overflow: hidden;" id="change">
+		<nav class="nav">
+			<div style="position: fixed; margin-left: 10px; ">
+				<img src="../img/logo.png" height="35px">
+			</div>
+			<ul>
+				<div align="right">
+					<li><a href="../Home.html" class="home">Home</a></li>
+					<li><a href="CV.html" class="navtxt">CV</a> </li>
+					<li><a href="Blog.html" class="navtxt">Blog</a></li>
+					<li><a href="Research.html" class="navtxt">Research</a></li>
+					<li><a href="ContactUs.html" class="navtxt">Contact Us</a></li>
+				</div>	
+			</ul>
+		</nav>
+	</div>
+	<!-- Javascript for changing background colour og nav bar starts here -->
+	<script type="text/javascript">
+		var color = ["#2B2D2F", "#000000"];
+		var x = 0;
+		var bgcolor = document.getElementById('change');
+		setInterval(slider, 30000);
+
+		function slider()
+		{
+			if (x < 2)
+			{
+				x = x + 1;	
+			}
+			else
+			{
+				x = 1;
+			}
+			bgcolor.style = "background-color:"+color[x-1]+"; width: 100%; height: 35px; overflow: hidden; position:fixed;";
+		}
+	</script>
+	<br>
+		<!-- body starts here -->
+		<div style="width: 100%; height: 2700px; padding-top: 25px; background-color: white;">
+			<div style="font-family: Arial;font-size: 20px;" align="center">
+			<h1>Research</h1>
+			</div>
+			<!-- body content starts here -->
+			<!-- Footer content reference -->
+			<div style="background-color: #f2f2f2; width: 50%; border: solid #e1e1e1;">	
+				<div style="width: 90%; padding-top: 10px;">
+					<p>The first image is from “https://novoresume.com/” and the right one is from this website. The footer part of the referenced website has a line which is very attractive so, I made my own.In the second image i created a division which was empty but the background colour property of CSS was used to give that colour.  
+					</p>
+				</div>
+				<br>
+				<div style="width: 100%;">
+					<div>
+						<a href="https://novoresume.com/" target="_blank"><img src="../img/novoresumecom.png" width="500px" height="235px" id="novo" class="Nhide"></a>
+					</div>
+					<div>
+						<img src="../img/Footer.png" width="500px" height="235px" class="hide" id="foot">	
+					</div>
+					<br>
+					<!-- button to activate javascript -->
+					<button onclick="img_changer1()" class="button">Click Here</button>
+				</div>
+	 		</div>	
+			<br>
+			<!-- body content reference -->
+			<div style="background-color: #f2f2f2; width: 50%; border: solid #e1e1e1">
+					<div style="width: 90%; padding-top: 10px;">
+						<p>The first image is from “https://vimeo.com/“ and the second image is from the home page of this website. The content displaying aspect of the reference website was used while making the home website. Firstly, I created a division for assigning display as flex. Then two divisions are created one with flex = 30% and other flex = 70%. The division with 70% flex is empty and the flex 30% has the content which is displayed.</p>	
+					</div>
+					<br>
+					<div style="width: 100%">
+						<div>
+							<a href="https://vimeo.com/" target="_blank"><img src="../img/vimeocom.png" width="550px" height="510" id="vim" class="Nhide"></a>
+						</div>
+						<div>
+							<img src="../img/Home.png" width="550px" height="510" id="home" class="hide">
+						</div>
+						<br>
+						<!-- button to activate javascript -->
+					<button onclick="img_changer2()" class="button">Click Here</button>
+					</div>
+			</div>	
+			<br>
+			<br>
+			<!-- Navigation bar reference -->
+			<div style="background-color: #f2f2f2; width: 95%; border: solid #e1e1e1">
+				<div style="width: 90%; padding-top: 10px;">
+					<p>The single line navigation bar of first image is the reason I have referenced the website “https://moz.com/”. Firstly, I used the ul and li property of html in the navigation bar. Then i used margin-right in the logo to create sepeation. Click on "Click Here" to see the single line navigation bar of this website.</p>
+				</div>
+				<br>
+				<div style="width:100%; ">
+					<div>
+						<a href="https://moz.com/" target="_blank"><img src="../img/mozcom.png" id="moz" class="Nhide"></a>
+					</div>
+					<br>
+					<div>
+						<img src="../img/nav.png" id="nav" class="hide">
+					</div>
+					<br>
+				<!-- button to activate javascript -->	
+				<button onclick="img_changer3()" class="button">Click Here</button>
+				</div>		
+			</div>
+			<br>
+			<br>
+			<!-- Blog reference -->
+			<div style="background-color: #f2f2f2; width: 50%; border: solid #e1e1e1">
+				<div style="width: 90%; padding-top: 10px;">
+					<p>In the first image the blog section, there is a underlinethis. This is referenced from “https://seths.blog/”.  In the second image this line is created by the border property of CSS. The division with the date has border-style set as double, then the border is set to white which camo-flash with the background and then border-top is set to solid.</p>	
+				</div>
+				<br>
+				<div style="width: 100%">
+					<div>
+						<a href="https://seths.blog/" target="_blank"><img src="../img/sethsblog.png" width="550px" height="300px" id="sb" class="Nhide"></a>
+					</div>
+					<div>
+						<img src="../img/blog.png" width="550px" height="300px" id="blog" class="hide">
+					</div>
+				<br>
+				<!-- button to activate javascript -->
+				<button onclick="img_changer4()" class="button">Click Here</button>
+				</div>
+			</div>
+			<br>
+			<br>
+			<!-- Form reference -->
+			<div style="background-color: #f2f2f2; width: 50%; border: solid #e1e1e1">
+				<div style="width: 90%; padding-top: 10px;">
+					<p>Lastly, the first image is referenced from google form, where placeholders are used to make users be aware about that the form needs. The label tag of html isn’t used in the program. This way the form looks clean and pleasing. Click on "Click Here" to see the form.</p>	
+				</div>
+				<br>
+				<div style="width: 100%">
+					<div>
+						<a href="https://accounts.google.com/signup" target="_blank"><img src="../img/google.png" width="550px" height="510" id="google" class="Nhide"></a>
+					</div>
+					<div>
+						<img src="../img/contactus.png" width="550px" height="510" id="cu" class="hide">
+					</div>
+					<br>
+				<!-- button to activate javascript -->	
+				<button onclick="img_changer5()" class="button">Click Here</button>
+				</div>
+			</div>	
+		</div>
+		<!-- Footer starts here -->
+	<div class="foot">
+		<footer align="center">
+			<!-- footer content starts here -->
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>
+					This website is designed to show
+				</p>
+			</div>
+			<div style="color: white; font-family: Arial;font-size: 30px;">
+				<p>
+					My Portfolio Website
+				</p>
+			</div>
+			<!-- cyan underline -->
+			<div style="background-color:#8cfffb; width: 10%;  height: 2px">
+			</div>
+			<br>
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>Chhetrapati,Kathmandu,Nepal</p>
+			</div>
+		</footer>
+	</div>	
+</body>
+</html>

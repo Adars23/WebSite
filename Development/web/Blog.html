@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<meta name="discription" content="Just Basic HTML"/>
+	<meta name="keywords" content="HTML"/>
+	<meta name="author" content="Islington">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- internal css -->
+	<style type="text/css">
+		*
+		{
+			margin: 0px auto;
+		}
+		.text
+		{
+			color: white;
+			font-size: 15px;
+			font-family: Arial;
+		}	
+	</style>
+</head>
+<body style="width: 100% height: 999px;">
+	<!-- Coding of navigation bar starts here -->
+	<div style="position: fixed;background-color: #000000;width: 100%;height: 35px; overflow: hidden;" id="change">
+		<nav class="nav">
+			<div style="position: fixed; margin-left: 10px; ">
+				<img src="../img/logo.png" height="35px">
+			</div>
+			<ul>
+				<div align="right">
+					<li><a href="../Home.html" class="home">Home</a></li>
+					<li><a href="CV.html" class="navtxt">CV</a> </li>
+					<li><a href="Blog.html" class="navtxt">Blog</a></li>
+					<li><a href="Research.html" class="navtxt">Research</a></li>
+					<li><a href="ContactUs.html" class="navtxt">Contact Us</a></li>
+				</div>	
+			</ul>
+		</nav>
+	</div>
+	<!-- internal Javascript for changing background colour of nav bar starts here -->
+	<script type="text/javascript">
+		var color = ["#2B2D2F", "#000000"];
+		var x = 0;
+		var bgcolor = document.getElementById('change');
+		setInterval(slider, 30000);
+
+		function slider()
+		{
+			if (x < 2)
+			{
+				x = x + 1;	
+			}
+			else
+			{
+				x = 1;
+			}
+			bgcolor.style = "background-color:"+color[x-1]+"; width: 100%; height: 35px; overflow: hidden; position:fixed;";
+		}
+	</script>
+	<br>
+	<!-- body starts here -->
+	<div style="width: 100%; height: 1000px; padding-top: 25px;background-color: white;" >
+		<div style="font-family: Arial;font-size: 20px;" align="center">
+			<h1>Blog</h1>
+		</div>
+		<br>
+		<br>
+		<!-- body content starts here -->
+		<div style="width: 50%; font-family: Arial;">
+			<!-- Heading of the webpage -->
+			<div style="; ;font-size: 15px; padding-left: 10px; padding-right: 10px;  ; text-align: center;">
+				<h1>Impact of Techonolofy</h1>
+			</div>
+			<br>
+			<!-- blog text starts here -->
+			<div style="font-size: 15px; padding-left: 10px; padding-right: 10px;;">
+				<p>
+					In the modern world each-an-every person is surrounded with devices using technology. I think devices using technology is so popular because they make each-and-every work easier. For example, cooking; without technology the process of making food will be very hard. This is because lighting a fire with wood and rocks is hard then using burners. However, technology has its own positive and negative impacts based on how the users are using it.
+       
+
+				</p><br>
+				<p>
+					Technology has given access to connect with people who are far-away. I can send a message to a friend or family who might be in any corner of the world within seconds if they have internet access. In the past, before technology was introduced people wrote letters and used trained birds as a mode of communication. And now technology has made communication very easy and it will be hard to imagine a life without it.
+
+				</p><br>
+				<p>
+					Similarly, technology like TV’s, mobile phones and laptops have connected everyone which has made people aware about current trends. There are many news channels or platform where any one can know what is happening around the globe. For illustration, if corona viruses spread when technology was not introduced. The number of people getting infected will be greater than now. Because of technology, people are aware about what should be done to avoid the viruses.
+
+				</p><br>
+				<p>
+					Moreover, the technology like router which lets the users connect to the internet can help in safe education. By safe education I mend studying during a pandemic, applications which support Virtual classes have helped students by getting educated without any risk of covid-19. This the one of the best uses of technology in the covid-19 pandemic.
+
+				</p><br>
+				<p>
+					On the other hand, if technological devices are not used properly many vital organs in a human body can be harmed. For example, blue rays from mobile-phones and laptops can harm the eyes by making it dry which can cause eye irritation. Also, Accident from vehicles can be considered as lack of proper use of technology and this can cause organs like legs and hands to detach form a person’s body. So, proper use of technological devices is very important.
+
+					
+				</p><br>
+				<p>
+					Also, technology has given access to internet where users find products which are luxurious and pleasing. On top of that the price is five or six times expensive then products which does the same work. For illustration, cheap shoes are available in the market but because of technology everyone knows about different brands of sneakers in the market, and prefer wearing them over cheap ones.
+
+				</p><br>
+				<p>
+					I think the main drawback of technology is addiction for future generation. Technological devices like gaming console, PC, laptop and mobile phone are the most addictive devices for kids. This will lead to kids losing interest in education, being anti-social and in risk of harming their organs in a very young age.
+
+				</p><br>
+				<p>
+					For conclusion, technology has a lot to offer like safe education, fast communication between friends and family, and important news. However, if it’s not properly used vital organs of new generation and old generation can be harmed.
+				</p><br>
+				<div style="border:white; border-top: solid;  border-style: double; text-align: right;">
+					<p><i>Written By- Aadarsha Muni Shakya</i></p>
+					<p>May 14 2021</p>
+				</div>
+				<br>
+			</div>
+		</div>	
+	</div>
+	<!-- Footer starts here -->
+	<div class="foot">
+		<footer align="center">
+			<!-- footer content starts here -->
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>
+					This website is designed to show
+				</p>
+			</div>
+			<div style="color: white; font-family: Arial;font-size: 30px;">
+				<p>
+					My Portfolio Website
+				</p>
+			</div>
+			<!-- cyan underline -->
+			<div style="background-color:#8cfffb; width: 10%;  height: 2px">
+
+			</div>
+			<br>
+			<div style="color: white; font-family: Arial;font-size: 15px;">
+				<p>Chhetrapati,Kathmandu,Nepal</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
